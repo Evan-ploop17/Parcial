@@ -22,8 +22,15 @@ public class Calculadora {
     public static double div(double a , double b){
         return a/b;
     }
+    
+    public static int exponente(int a , int b){
+        return (int) Math.pow(a, b);
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        int total = exponente(2,4);
+        System.out.println("Total: " + total );
     }
     
 }

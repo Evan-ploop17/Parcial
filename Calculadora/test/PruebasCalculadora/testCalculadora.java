@@ -42,4 +42,10 @@ public class testCalculadora {
         double espearado = 1.2;
         assertEquals(espearado, resultado, 0.00);
     }
+    @Test
+    public void testExponente(){
+        int resultado = Calculadora.exponente(2, 3);
+        int esperado = Calculadora.suma(Calculadora.multiplicar(2, 2), Calculadora.multiplicar(2, 2));
+        assertEquals(esperado, resultado);
+    }
 }
